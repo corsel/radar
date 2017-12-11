@@ -1,4 +1,4 @@
-#include "room.h"
+#include "room-iface.h"
 
 // Room class
 RoomIface::RoomIface() {}

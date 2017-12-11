@@ -31,6 +31,7 @@ void GlutFuncs::initialize(int argc, char* argv[])
 	glClearColor(0.2f, 0.2f, 0.2f, 0.0f);
 	glutInitWindowSize(500, 500);
 	glutCreateWindow("radar");
+  glEnable(GL_POLYGON_SMOOTH);
 
 	glutDisplayFunc(&GlutFuncs::display);
 	glutIdleFunc(&GlutFuncs::idle);

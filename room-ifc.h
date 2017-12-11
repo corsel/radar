@@ -9,6 +9,8 @@ private:
 
 public:
 	RoomIface(void);
+  virtual Vec2 interact(Vec2 argPosn) = 0;
+  virtual void render(void) = 0;
 };
 
 class LineRoom : public RoomIface

@@ -8,6 +8,7 @@ class ObjectIface // abstract class
 {
 protected:
 	Transport transport;
+
 public:
 	ObjectIface(void);
 	virtual void updateTransport(Transport argTransport) = 0; // debug
@@ -18,6 +19,7 @@ class PlayerObject : public ObjectIface
 private:
 	ColliderIface *collider;
 	VisualIface *visual;
+
 public:
 	PlayerObject(void);
 	void update(void);
